@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link  href="index.js">
+
+</head>
+<body>
+    
+    <!-- first section start-->
+    <div class="first_container">
+        <div class="logo_container">
+        <div class="logo"><span id="letter">J</span>itendra.</div>
+        </div>
+
+        <div class="nav_container">
+            <ul id="list_container">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- first section end -->
+
+    <!-- home section start-->
+    <div class="second_section">
+
+      <div class="text_container" id="home">
+       <h4>Front End Developer</h4>
+       <h1 id="name">Hi, i'm <span id="fname">Jitendra</span><br>Sahu from Odisha,India</h1>
+      </div>
+
+      <div class="image_container">
+        <img  id="images" src="jituimage.png" alt="image">
+      </div>
+
+    </div>
+
+    <!-- home section end-->
+
+
+
+    <!-- about section start-->
+    <div class="about_section" id="about">
+    <div class="bgimage_container">
+        <img  id="bgimages" src="jitubgimages.png" alt="image">
+      </div>
+
+    <div class="about_text_container" >
+
+        <h1 id="heading">A<span class="me">b</span>out<span class="me">Me</span></h1>
+        <p id="para">Hi, i am Jitendra sahu ,a young dynamic personality.<br>I learnd Html,CSS and java-script.
+           I did many projects using Html,CSS and java-script.I did my graduation from 
+          <abbr title="Biju patnaik univarsity of technology"> BPUT</abbr><br>in the year 2021.
+          I worked as a pre-sales associate in Byjus from <strong>19-oct-2021</strong>  to <br><strong>02-Aug-2022</strong>
+          . Now i am searching for a job as a front end Developer.
+        </p>
+        <br>
+        <br>
+
+       <div class="button_container">
+        <ol id="ordered_list_container">
+            <li><a  id="Skills" onclick="document.getElementById('img').src='skillls.jpg'">Skills</a></li>
+            <li><a  id="Experience" onclick="document.getElementById('img').src='workexperienceee.jpg'">Experience</a></li>
+            <li><a  id="Eductaion" onclick="document.getElementById('img').src='educationn.jpg'">Eductaion</a></li>
+        </ol>
+       </div>
+
+       <div class="img_container">
+        <img  id="img" src="workexperienceee.jpg" alt="image">
+      </div>
+
+     </div>
+    </div>
+    <!-- about section end-->
+
+
+
+    <!-- project_section start -->
+  
+  <div class="project_conatiner" id="project">
+    <h1 id="heading2">p<span class="me">r</span>oj<span class="me">ets..</span></h1>
+    <div class="perent">
+      <a href="https://jitukumarsahu.github.io/carcolourchangerbyjitu/" class="child"><h3>project-1</h3></a>
+      <a href="https://jitukumarsahu.github.io/tempconverter/" class="child"><h3>project-2</h3></a>
+      <a href="https://jitukumarsahu.github.io/projectcounter/" class="child"><h3>project-3</h3></a>
+      <a href="https://jitukumarsahu.github.io/ballonoff/" class="child"><h3>project-4</h3></a>
+      <a href="https://jitukumarsahu.github.io/ballonoff/" class="child"><h3>project-5</h3></a>
+      <a href="https://jitukumarsahu.github.io/ballonoff/" class="child"><h3>project-6</h3></a>
+  </div>
+ </div>
+  <!-- project_section end -->
+
+   <!-- contact_section start -->
+<div class="contact_section" id="contact">
+<div class="container">
+
+  <div class="left_container">
+    <h1 id="heading2">C<span class="me">o</span>ntact<span class="me">Me..</span></h1>
+
+    <div class="mail_container">
+      <i class="fa-solid fa-envelope" id="mail"></i>
+      <a href="mailto:jsahu5425@gmail.com" class="mail">jsahu5425@gmail.com</a>
+    </div>
+
+    <div class="call_container">
+      <i class="fa-solid fa-phone" id="call"></i><a id="number">8456016379</a>
+    </div>
+
+    <div class="icon_container">
+      <a href="" name="twitter"><i class="fa-brands fa-twitter" id="twitter"></i></a>
+      <a href="" name="LinkedIn"><i class="fa-brands fa-linkedin" id="LinkedIn"></i></a>
+    </div>
+
+    <div class="cv_container">
+      <a id="cv" href="" download>Download CV</a>
+    </div>
+
+  </div>
+
+  
+
+  <div class="right_container">
+   <form action="" name="submit-to-google-sheet">
+           <input type="text" placeholder="Your Name" name="Name" required id="yourname">
+           <input type="email" placeholder="Your Email" name="Email" required id="youremail">
+           <textarea name="message" placeholder="Your Message"  cols="30" rows="10" id="message" ></textarea>
+           <input type="submit" id="submit">submit
+   </form>
+   <div id="msg"></div>
+  </div>
+
+</div>
+</div>
+   
+   <!-- contact_section end -->
+
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzwyuZdgrJpN_mvV5NQ9mTR9oHABvGNqz8CTSOH1r1u-1TD6QzuzvXmFFAsgxuE3c9zBQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const message=document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          message.innerHTML="!!!!submitted!!!!"
+          setTimeout(function(){
+            message.innerHTML=""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html>
